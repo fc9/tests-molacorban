@@ -3,28 +3,17 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Enums\BatchStatusEnum;
-use App\Exceptions\PurchaseException;
+use App\Exceptions\BatchException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\SendBatchRequest;
 use App\Http\Requests\ShowBatchRequest;
-use App\Jobs\LoadBatchFilesJob;
-use App\Models\Batch;
-use App\Repositories\BaseRepository;
+use App\Libraries\Response;
 use App\Repositories\BatchRepository;
 use App\Repositories\PurchaseRepository;
-use App\Services\BatchAPIService;
-use App\Services\FileService;
-use App\Services\UploadService;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Http\{JsonResponse, Request};
+use App\Libraries\BatchAPIService;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Arr;
-use Phpro\ApiProblem\Exception\ApiProblemException;
-use Phpro\ApiProblem\Http\ForbiddenProblem;
-use Phpro\ApiProblem\Http\PreconditionRequiredProblem;
-use Prophecy\Exception\Doubler\MethodNotFoundException;
-use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Facades\DB;
 use Throwable;
 
 class BatchController extends Controller
@@ -59,29 +48,35 @@ class BatchController extends Controller
      *
      * @param SendBatchRequest $request
      * @return JsonResponse
-     * @throws PurchaseException
+     * @throws BatchException
      */
     public function store(SendBatchRequest $request): JsonResponse
     {
         try {
             $file = Arr::get($request->allFiles(), 'file');
-
-            $batch = $this->repo->store([
+            $payload = [
                 'status' => BatchStatusEnum::IN_FILE,
                 'path' => $file->store('public/files'),
                 #'filename' => $file->getClientOriginalName(),
-            ]);
+            ];
 
+            DB::beginTransaction();
+            $batch = $this->repo->store($payload);
             #dispatch((new LoadBatchFilesJob()));
+            DB::commit();
 
-            return response()->json([
-                'success' => true,
+            $data = [
+                'type' => get_class($batch),
                 'uuid' => $batch->uuid,
-                'url' => route('show', ['uuid' => $batch->uuid])
-            ]);
+                'links' => [
+                    'self' => route('show', ['uuid' => $batch->uuid])
+                ]
+            ];
+
+            return Response::json(201, $data);
         } catch (Throwable $e) {
             DB::rollBack();
-            throw new PurchaseException($e);
+            throw new BatchException($e);
         }
     }
 
@@ -89,7 +84,7 @@ class BatchController extends Controller
      * @param ShowBatchRequest $request
      * @param string $uuid
      * @return JsonResponse
-     * @throws PurchaseException
+     * @throws BatchException
      */
     public function show(ShowBatchRequest $request, string $uuid): JsonResponse
     {
@@ -102,21 +97,21 @@ class BatchController extends Controller
             ];
 
             if ($batch->status->is(BatchStatusEnum::IN_FILE)) {
-                return response()->json($data + ['message' => 'Batch has not yet been uploaded.'], 200);
+                return Response::json(200, $data, 'Batch has not yet been uploaded.');
             } else if ($batch->status->is(BatchStatusEnum::ERROR)) {
-                return response()->json($data + ['message' => 'Could not load batch.', 'errors' => $batch->errors], 200);
+                return Response::json(200, $data, 'Could not load batch.', $batch->errors);
             } else if ($batch->status->is(BatchStatusEnum::LOADING)) {
-                return response()->json($data + ['message' => 'Batch is loading, please try later.'], 200);
+                return Response::json(200, $data, 'Batch is loading, please try later.');
             }
 
             $query = $this->purchaseRepo->show(['batch_uuid' => $batch->uuid]);
+            $params = $request->all();
+            $data = $data + BatchAPIService::dataQuery($query, $params);
 
-            $data = $data + BatchAPIService::dataQuery($query, $request->all());
-
-            return response()->json($data, 200, [], 0);
+            return Response::json(200, $data, null, null, Arr::has($params, 'pretty'));
         } catch (Throwable $e) {
             DB::rollBack();
-            throw new PurchaseException($e);
+            throw new BatchException($e);
         }
     }
 

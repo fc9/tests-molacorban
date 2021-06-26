@@ -4,9 +4,9 @@ namespace App\Console\Commands;
 
 use App\Enums\BatchStatusEnum;
 use App\Http\Requests\PurchaseRequest;
+use App\Libraries\BatchReaderCsv;
 use App\Repositories\BatchRepository;
 use App\Repositories\PurchaseRepository;
-use App\Services\BatchCSVService;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
@@ -51,20 +51,26 @@ class LoadFilesCommand extends Command
             $batchRepository =  new BatchRepository;
             $status = BatchStatusEnum::keys2Values(array_values(explode(',', $batch)));
             $batches = $batchRepository->find(['status' => $status])->get();
+            $totalColumns = 17;
 
             foreach ($batches as $batch) {
                 $batchRepository->store(['status' => BatchStatusEnum::LOADING], $batch);
-                $records = BatchCSVService::readerByPath($batch->path, ',')->getRecords();
+                $records = BatchReaderCsv::fromPath($batch->path, ',');
                 $errors = [];
 
                 DB::beginTransaction();
                 foreach ($records as $index => $record) {
-                    $record['batch_uuid'] = $batch->uuid;
+                    if (count($record) !== $totalColumns) {
+                        $errors = $errors + ['format' => ['Total columns not supported.']];
+                        continue;
+                    }
+
                     $validator = Validator::make($record, (new PurchaseRequest)->rules());
 
                     if ($validator->fails()) {
                         $errors = $errors + $validator->errors()->messages();
                     } elseif (count($errors) === 0) {
+                        $record['batch_uuid'] = $batch->uuid;
                         (new PurchaseRepository)->store($record);
                     }
                 }

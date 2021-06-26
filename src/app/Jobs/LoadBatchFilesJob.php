@@ -30,6 +30,6 @@ class LoadBatchFilesJob implements ShouldQueue
      */
     public function handle()
     {
-        Artisan::call('load:batch-files', []);
+        Artisan::call('load:files --batch=in_file', []);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Services;
+namespace App\Libraries;
 
 use App\Enums\PaymentStatusEnum;
 use App\Enums\PurchaseStatusEnum;
@@ -47,6 +47,7 @@ class BatchAPIService
      */
     public static function dataQuery(Builder $query, array $params): array
     {
+        self::validateParams($params);
         $query = self::fields($query, Arr::get($params, 'fields', '') ?? '');
         $query = self::sort($query, Arr::get($params, 'sort', '') ?? '');
         $query = self::filter($query, Arr::get($params, 'filter', '') ?? '');
@@ -54,17 +55,30 @@ class BatchAPIService
 
         $arr = $query->toArray();
         $arr['data'] = array_map(function ($item) {
-            $item->valor_original = brl2decimal($item->valor_original ?? 0, 2);
-            $item->valor_desconto = brl2decimal($item->valor_desconto ?? 0, 2);
-            $item->valor_final = brl2decimal($item->valor_final ?? 0, 2);
-            $item->taxa_aplicada = brl2decimal($item->taxa_aplicada ?? 0, 2);
-            $item->taxa_original = brl2decimal($item->taxa_original ?? 0, 2);
-            $item->status_situacao = PurchaseStatusEnum::fromValue(intval($item->status_situacao))->description;
-            $item->status_pgto = PaymentStatusEnum::fromValue(intval($item->status_pgto))->description;
+            if (isset($item->valor_original)) $item->valor_original = brl2decimal($item->valor_original ?? 0, 2);
+            if (isset($item->valor_desconto)) $item->valor_desconto = brl2decimal($item->valor_desconto ?? 0, 2);
+            if (isset($item->valor_final)) $item->valor_final = brl2decimal($item->valor_final ?? 0, 2);
+            if (isset($item->taxa_aplicada)) $item->taxa_aplicada = brl2decimal($item->taxa_aplicada ?? 0, 2);
+            if (isset($item->taxa_original)) $item->taxa_original = brl2decimal($item->taxa_original ?? 0, 2);
+            if (isset($item->status_situacao)) $item->status_situacao = PurchaseStatusEnum::fromValue(intval($item->status_situacao))->description;
+            if (isset($item->status_pgto)) $item->status_pgto = PaymentStatusEnum::fromValue(intval($item->status_pgto))->description;
             return $item;
         }, $arr['data']);
 
         return $arr;
+    }
+
+    protected static function validateParams(array $params)
+    {
+        $paramsValid = ['fields', 'sort', 'filter', 'page', 'per_page', 'pretty'];
+
+        foreach (array_keys($params) as $param) {
+            if (!in_array($param, $paramsValid)) {
+                throw new ApiProblemException(
+                    new BadRequestProblem("'{$param}' is not a valid URI parameter.")
+                );
+            }
+        }
     }
 
     /**

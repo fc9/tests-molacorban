@@ -2,6 +2,7 @@
 
 namespace App\Exceptions;
 
+use App\Libraries\Response;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Validation\ValidationException;
@@ -57,43 +58,17 @@ class Handler extends ExceptionHandler
     public function render($request, Throwable $e): \Symfony\Component\HttpFoundation\Response
     {
         #dd($request, $e);
-        if ($e instanceof ValidationException) {
-
-            return response()->json([
-                'status' => 422,
-                'errors' => $e->validator->errors()->messages()
-            ], 422);
-
-        } elseif ($e instanceof PurchaseException) {
-
-            return response()->json([
-                'status' => $e->getCode(),
-                'message' => $e->getMessage()
-            ], $e->getCode());
-
-        } elseif (($e instanceof MethodNotAllowedHttpException || $e instanceof NotFoundHttpException)
-            && $request->isMethod('post')) {
-
-            return response()->json([
-                'status' => 404,
-                'message' => 'Page Not Found. If error persists, contact info@domain.com',
-            ], 404);
-
+        if ($e instanceof BatchException) {
+            return Response::json($e->getCode() > 0 ? $e->getCode() : 404, [], null, $e->getMessage());
+        } elseif (($e instanceof MethodNotAllowedHttpException || $e instanceof NotFoundHttpException) && $request->isMethod('post')) {
+            return Response::json(404, [], null, 'Page Not Found. If error persists, contact info@domain.com');
+        } elseif ($e instanceof MethodNotAllowedHttpException ) {
+            return Response::json(405, [], null, $e->getMessage());
         } elseif ($e instanceof AuthenticationException) {
-
-            return response()->json([
-                'status' => 419,
-                'message' => $e->getMessage()
-            ], 419);
-
+            return Response::json(419, [], null, $e->getMessage());
+        } elseif ($e instanceof ValidationException) {
+            return Response::json(422, [], null, $e->validator->errors()->messages());
         }
-
-//        if ($e instanceof ModelNotFoundException) {
-//            return response()->json([
-//                'code' => $e->getCode(),
-//                'message' => 'Entry for ' . str_replace('App', '', $e->getModel()) . ' not found'
-//            ], 404);
-//        }
 
         return parent::render($request, $e);
     }

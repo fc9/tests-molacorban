@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Ramsey\Uuid\Uuid;
 
 class ShowBatchRequest extends FormRequest
 {
@@ -24,7 +25,10 @@ class ShowBatchRequest extends FormRequest
     public function rules()
     {
         return [
-            'uuid' => ['required|uuid']
+            'uuid' => [
+                'required',
+                fn ($attr, $value, $fail) => Uuid::isValid($value) ? null : $fail("The {$attr} is invalid.")
+            ]
         ];
     }
 }

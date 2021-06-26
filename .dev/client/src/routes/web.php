@@ -53,14 +53,14 @@ Route::get('/', function () {
 //});
 
 Route::get('grant-password', function () {
-    $response = Http::post(env('API_URL') . 'oauth/token', [
+    $passportRequest = Http::post(env('API_URL') . 'oauth/token', [
         'grant_type' => 'password',
-        'client_id' => env('CLIENT_ID'),
-        'client_secret' => env('CLIENT_SECRET'),
+        'client_id' => env('PASSPORT_CLIENT_ID'),
+        'client_secret' => env('PASSPORT_CLIENT_SECRET') . 'd',
         'username' => env('USERNAME'),
         'password' => env('PASSWORD'),
         'scope' => ''
     ]);
 
-    dd($response->json());
+    dd($passportRequest->json(), $passportRequest->status());
 });

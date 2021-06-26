@@ -2,18 +2,10 @@
 
 namespace App\Repositories;
 
-use App\Enums\PaymentStatusEnum;
-use App\Enums\PurchaseStatusEnum;
-use App\Http\Requests\PurchaseRequest;
-use App\Models\Category;
-use App\Models\Customer;
-use App\Models\Payment;
-use App\Models\Product;
-use App\Models\Purchase;
-use App\Models\Supplier;
+use App\Enums\{PaymentStatusEnum, PurchaseStatusEnum};
+use App\Models\{Category, Customer, Payment, Product, Purchase, Supplier};
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Validator;
 
 class PurchaseRepository extends BaseRepository
 {
@@ -136,7 +128,7 @@ class PurchaseRepository extends BaseRepository
         ]);
 
         if (Arr::get($payload, 'data_pgto') !== null) {
-            $payment = Payment::create([
+            Payment::create([
                 'purchase_id' => $purchase->id,
                 'discount' => Arr::get($payload, 'valor_desconto'),
                 'value' => Arr::get($payload, 'valor_final'),
@@ -146,59 +138,4 @@ class PurchaseRepository extends BaseRepository
             ]);
         }
     }
-
-//    /**
-//     * @param array $records
-//     * @param string $batch_uuid
-//     * @return array|bool[]
-//     * @throws \BenSampo\Enum\Exceptions\InvalidEnumKeyException
-//     */
-//    public function saveAll(array $records, string $batch_uuid): array
-//    {
-//        $errors = [];
-//
-//        DB::beginTransaction();
-//
-//        foreach ($records as $index => $record) {
-//            $validator = Validator::make($record, (new PurchaseRequest)->rules());
-//            if ($validator->fails()) $errors = $errors + $validator->errors()->messages();
-//            elseif (count($errors) === 0) $this->save($record, $batch_uuid);
-//        }
-//
-//        if (count($errors) === 0) DB::commit();
-//        else DB::rollBack();
-//
-//        return count($errors) === 0 ? ['success' => true] : ['errors' => $errors];
-//    }
-
-//    /**
-//     * @param array $payload
-//     * @return array|bool[]
-//     */
-//    public function validate(array $payload = [])
-//    {
-//        $validator = Validator::make($payload, [
-//            "cod_fornecedor" => 'required|integer|min:1',
-//            "cod_prod" => 'required|integer|min:1',
-//            "cliente" => 'required|string|max:45',
-//            "documento" => 'required|string|max:16',
-//            "nome_prod" => 'required|string|max:45',
-//            "nome_categoria" => 'required|string|max:45',
-//            "nome_fornecedor" => 'required|string|max:45',
-//            "valor_original" => 'required|regex:/^\d+(\.\d{1,2})?$/',
-//            "data_compra" => 'required|date_format:Y/m/d',
-//            "valor_desconto" => 'required|regex:/^\d+(\.\d{1,2})?$/',
-//            "valor_final" => 'required|regex:/^\d+(\.\d{1,2})?$/',
-//            "data_pgto" => 'nullable|date_format:Y/m/d',
-//            "data_devolucao" => 'nullable|date_format:Y/m/d',
-//            "status_situacao" => 'required|string|max:45|in:PAGA,ESTORNO,CANCELADA',
-//            "status_pgto" => 'required|string|max:45|in:EFETIVADO,REMOVIDO',
-//            "taxa_aplicada" => 'required|regex:/^\d+(\.\d{1,2})?$/',
-//            "taxa_original" => 'required|regex:/^\d+(\.\d{1,2})?$/',
-//        ]);
-//
-//        if ($validator->fails()) return ['errors' => $validator->errors()->messages()];
-//
-//        return ['success' => true];
-//    }
 }

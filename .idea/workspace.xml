@@ -1,267 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dc0b0e8-75c3-4961-84ee-fc59ba58668e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dev/client/.docker/client/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/log/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/log/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/.docker/client/php/init.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/.docker/client/php/php.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/public/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/lang/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/lang/en/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/lang/en/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/lang/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/client/src/webpack.mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/dados.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/dados.fail.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/dados.ok.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.dev/query.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/Dockerfile-bkp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/crontab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/nginx/log/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/nginx/log/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/php/init.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/php/php.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/supervisord/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/supervisord/queue.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/supervisord/web.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tests-mola.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Console/Commands/DeleteFilesCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Console/Commands/LoadFilesCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Enums/BatchStatusEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Enums/PaymentStatusEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Enums/PurchaseStatusEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Exceptions/PurchaseException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Requests/PurchaseRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Requests/SendBatchRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Requests/ShowBatchRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Jobs/LoadBatchFilesJob.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Batch.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Customer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Passport/Client.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Payment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Purchase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/Supplier.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Repositories/BaseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Repositories/BatchRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Repositories/PurchaseRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Services/BatchAPIService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Services/BatchCSVService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_06_20_061412_create_batches_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_06_21_214458_create_suppliers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_06_21_222845_create_customers_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_06_21_223530_create_categories_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_06_21_224250_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_06_21_225619_create_purchases_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/migrations/2021_06_21_232208_create_payments_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/vendor/horizon/app-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/vendor/horizon/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/vendor/horizon/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/vendor/horizon/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/vendor/horizon/img/horizon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/vendor/horizon/img/sprite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/vendor/horizon/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/web.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/lang/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/lang/en/enums.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/lang/en/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/lang/en/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/lang/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpack.mix.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/src/.gitignore" afterDir="false" />
+    <list default="true" id="1dc0b0e8-75c3-4961-84ee-fc59ba58668e" name="Default Changelist" comment="before review tests">
+      <change afterPath="$PROJECT_DIR$/src/app/Exceptions/BatchException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Libraries/ReaderCsv.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Libraries/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Feature/ApiOAuthTokenTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/PurchaseRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/SendBatchRequestTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/ShowBatchRequestTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/log/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/nginx/log/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/nginx/log/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/php/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/php/init.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/php/php.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/src/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/client/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/src/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dev/dados.ok.csv" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/dados.ok.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/crontab" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/crontab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/nginx/log/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/nginx/log/access.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/nginx/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/nginx/log/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.docker/php/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/php/init.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rebuild.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Console/Commands/LoadFilesCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Console/Commands/LoadFilesCommand.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Exceptions/PurchaseException.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Requests/PurchaseRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Requests/PurchaseRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Requests/ShowBatchRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Requests/ShowBatchRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Jobs/LoadBatchFilesJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Jobs/LoadBatchFilesJob.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Repositories/BatchRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/BatchRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Repositories/PurchaseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/PurchaseRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Services/BatchAPIService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libraries/BatchAPIService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Services/BatchCSVService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libraries/BatchReaderCsv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/TestCase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,45 +66,56 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/app/Models/User.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Enums/PaymentStatusEnum.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Libraries/Response.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Models/Payment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Exceptions/PurchaseException.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/vendor/league/csv/src/Reader.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.dev/client/src/.env.example" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/config/database.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/database/migrations/2021_06_21_225619_create_purchases_table.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.dev/client/src/.env" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Services/BatchAPIService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Libraries/BatchReaderCsv.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Libraries/BatchAPIService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/vendor/league/csv/src/TabularDataReader.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Http/Requests/ShowBatchRequest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Enums/PurchaseStatusEnum.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/routes/api.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Console/Commands/DeleteFilesCommand.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Services/BatchCSVService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Repositories/BatchRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/ShowBatchRequestTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.docker/Dockerfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/SendBatchRequestTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.dev/client/.docker/Dockerfile" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Enums/BatchStatusEnum.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.dev/client/.docker/php/init.sh" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/storage/logs/laravel.log" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/.env" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Exceptions/Handler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Console/Commands/LoadFilesCommand.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/database/migrations/2021_06_20_061412_create_batches_table.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Jobs/LoadBatchFilesJob.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Exceptions/BatchException.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/config/database.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.dev/dados.ok.csv" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Http/Requests/SendBatchRequest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Libraries/ReaderCsv.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Repositories/BatchRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Repositories/BaseRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Repositories/PurchaseRepository.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.dev/client/.docker/client/Dockerfile" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Enums/BatchStatusEnum.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.dev/client/.docker/client/php/init.sh" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.docker/php/init.sh" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.docker/crontab" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/storage/logs/laravel.log" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Console/Kernel.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.docker/supervisord/default.conf" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/.env.example" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.docker/supervisord/queue.conf" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.docker/supervisord/web.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/.env" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.dev/client/src/storage/logs/laravel.log" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Http/Requests/PurchaseRequest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Exceptions/Handler.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/.dev/client/.docker/client/nginx/default.conf" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/build.sh" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.dev/client/.docker/nginx/default.conf" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/rebuild.sh" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.dev/client/src/routes/web.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Console/Commands/LoadFilesCommand.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Models/Purchase.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/database/migrations/2021_06_20_061412_create_batches_table.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/app/Jobs/LoadBatchFilesJob.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -458,33 +251,37 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1uErs7qW2KObqhoPRrroBJyndez" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../royalpixel/hotel-invest" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests" />
+      <recent name="$PROJECT_DIR$/src/app/Libraries" />
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/storage/logs" />
       <recent name="$PROJECT_DIR$/.docker" />
-      <recent name="$PROJECT_DIR$/src/api/app/Services" />
-      <recent name="$PROJECT_DIR$/.docker/api" />
-      <recent name="$PROJECT_DIR$/.docker/client/php" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.dev/client/.docker" />
+      <recent name="$PROJECT_DIR$/src/app/Libraries" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.docker" />
       <recent name="$PROJECT_DIR$/.dev/client" />
-      <recent name="$PROJECT_DIR$/.dev/client/.docker" />
-      <recent name="$PROJECT_DIR$/.docker/api/php" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -501,8 +298,19 @@
       <workItem from="1624414888725" duration="5294000" />
       <workItem from="1624426566258" duration="14500000" />
       <workItem from="1624492810547" duration="27502000" />
-      <workItem from="1624544006866" duration="16047000" />
+      <workItem from="1624544006866" duration="53146000" />
+      <workItem from="1624628931659" duration="3044000" />
+      <workItem from="1624642591045" duration="2813000" />
+      <workItem from="1624687416637" duration="13288000" />
     </task>
+    <task id="LOCAL-00001" summary="before review tests">
+      <created>1624587995228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624587995228</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,5 +327,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="before review tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="before review tests" />
   </component>
 </project>

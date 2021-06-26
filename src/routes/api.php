@@ -1,8 +1,9 @@
 <?php
 
+use App\Http\Controllers\Api\V1\BatchController;
+use App\Libraries\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use Phpro\ApiProblem\Http\NotFoundProblem;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,16 +23,13 @@ Route::prefix('v1')->middleware('auth:api')->group(function () {
     });
 
     Route::prefix('batches')->middleware('throttle:60,1')->group(function () {
-        Route::get('{uuid}', [\App\Http\Controllers\Api\V1\BatchController::class, 'show'])->name('show');
-        Route::post('', [\App\Http\Controllers\Api\V1\BatchController::class, 'store']);
-        #Route::get('', [\App\Http\Controllers\Api\V1\BatchController::class, 'index']);
+        Route::get('{uuid}', [BatchController::class, 'show'])->name('show');
+        Route::post('', [BatchController::class, 'store']);
+        #Route::get('', [BatchController::class, 'index']);
     });
 
 });
 
 Route::fallback(function () {
-    return response()->json([
-        'message' => 'Page Not Found. If error persists, contact info@domain.com',
-        'status' => false
-    ], 404);
+    return Response::json(404, [], null, 'Page Not Found. If error persists, contact info@domain.com');
 });

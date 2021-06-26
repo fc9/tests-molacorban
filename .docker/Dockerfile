@@ -57,8 +57,8 @@ WORKDIR /var/www/html
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-RUN echo 'max_execution_time = 1000' >> /usr/local/etc/php/conf.d/docker-php-maxexectime.ini;
-RUN echo 'memory_limit = 999M' >> /usr/local/etc/php/conf.d/docker-php-memory_limit.ini;
+RUN echo 'memory_limit = 2048M' >> /usr/local/etc/php/conf.d/docker-php-memory_limit.ini;
+RUN echo 'max_execution_time = 600' >> /usr/local/etc/php/conf.d/docker-php-maxexectime.ini;
 
 ADD ./supervisord/* /etc/supervisord/
 

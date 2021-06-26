@@ -1,8 +1,10 @@
-version: "3"
+version: "3.1"
+
 networks:
-  network:
-    driver: bridge
+  netapi:
+
 services:
+
   php:
     build:
       context: .docker
@@ -17,11 +19,12 @@ services:
     environment:
       PATH: "/root/.composer/vendor/bin:${PATH}"
     networks:
-      - network
+      - netapi
+
   pgsql:
-    image: postgres:9.6-alpine
-    restart: always
     container_name: pgsql
+    image: postgres
+    restart: always
     ports:
       - 5433:5432
     volumes:
@@ -31,14 +34,16 @@ services:
       POSTGRES_USER: tests
       POSTGRES_DB: tests
     networks:
-      - network
+      - netapi
+
   redis:
     image: redis:4.0
     container_name: redis
     ports:
       - "6382:6379"
     networks:
-      - network
+      - netapi
+
   nginx:
     image: nginx:stable-alpine
     container_name: nginx
@@ -54,6 +59,7 @@ services:
       - pgsql
       - redis
     networks:
-      - network
-volumes:
-  data:
+      - netapi
+
+#volumes:
+#  data:
