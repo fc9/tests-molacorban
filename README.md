@@ -149,7 +149,7 @@ Estando tudo certo:
 ```json
 {
   "success": true,
-  "type": "App\Models\Batch",
+  "type": "App\\Models\\Batch",
   "uuid": "f2e4b830-c590-4e52-89fb-1949abba8175",
   "links": {
     "self": "http://127.0.0.1:8000/api/v1/batches/f2e4b830-c590-4e52-89fb-1949abba8175"
@@ -258,6 +258,6 @@ docker exec -it php php artisan test
   </tr>
 </table>
 
-Para obter uma explicação detalhada sobre como as coisas funcionam mande um "oi" para  **fabiocabralx@gmail.com**.
+Para obter uma explicação detalhada sobre como as coisas funcionam mande um "oi" para  **me@fabiocabral.dev**.
 
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/Naereen/badges/)
