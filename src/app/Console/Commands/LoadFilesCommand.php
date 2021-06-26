@@ -58,6 +58,8 @@ class LoadFilesCommand extends Command
                 $records = BatchReaderCsv::fromPath($batch->path, ',');
                 $errors = [];
 
+                if (count($records) === 0) continue;
+
                 DB::beginTransaction();
                 foreach ($records as $index => $record) {
                     if (count($record) !== $totalColumns) {

@@ -1,49 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1dc0b0e8-75c3-4961-84ee-fc59ba58668e" name="Default Changelist" comment="before review tests">
-      <change afterPath="$PROJECT_DIR$/src/app/Exceptions/BatchException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Libraries/ReaderCsv.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/Libraries/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/Feature/ApiOAuthTokenTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/PurchaseRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/SendBatchRequestTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/ShowBatchRequestTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/nginx/default.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/log/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/nginx/log/access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/nginx/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/nginx/log/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/php/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/php/init.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/client/.docker/client/php/php.ini" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/.docker/php/php.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/client/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/src/.env.example" afterDir="false" />
+    <list default="true" id="1dc0b0e8-75c3-4961-84ee-fc59ba58668e" name="Default Changelist" comment="add test auth passport">
+      <change afterPath="$PROJECT_DIR$/.dev/I.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Events/NewBatchFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Listeners/ProcessBatchFiles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/factories/BatchFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Feature/ApiBatchShowTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Feature/ApiBatchStoreTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/Unit/App/Events/NewBatchFileTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dev/client/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/client/src/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dev/dados.ok.csv" beforeDir="false" afterPath="$PROJECT_DIR$/.dev/dados.ok.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/crontab" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/crontab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.docker/nginx/log/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/nginx/log/access.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/nginx/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/nginx/log/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.docker/php/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/.docker/php/init.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/rebuild.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/src/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Console/Commands/LoadFilesCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Console/Commands/LoadFilesCommand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Exceptions/PurchaseException.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Requests/PurchaseRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Requests/PurchaseRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Http/Requests/ShowBatchRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Requests/ShowBatchRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Jobs/LoadBatchFilesJob.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Jobs/LoadBatchFilesJob.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Repositories/BatchRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/BatchRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Repositories/PurchaseRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Repositories/PurchaseRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Services/BatchAPIService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libraries/BatchAPIService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Services/BatchCSVService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libraries/BatchReaderCsv.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/Unit/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Libraries/BatchReaderCsv.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Libraries/BatchReaderCsv.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Batch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Models/Batch.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Feature/ApiOAuthTokenTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Feature/ApiOAuthTokenTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/ShowBatchRequestTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/ShowBatchRequestTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,13 +49,19 @@
     <setting file="file://$PROJECT_DIR$/src/app/Models/Payment.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/vendor/league/csv/src/Reader.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.dev/client/src/.env.example" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/tests/Feature/ApiOAuthTokenTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/database/migrations/2021_06_21_225619_create_purchases_table.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.dev/client/src/.env" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Libraries/BatchReaderCsv.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Models/Batch.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Events/NewBatchFile.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Libraries/BatchAPIService.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/vendor/league/csv/src/TabularDataReader.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Http/Requests/ShowBatchRequest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/tests/Unit/App/Events/NewBatchFileTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Enums/PurchaseStatusEnum.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Listeners/ProcessBatchFiles.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/database/factories/BatchFactory.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/routes/api.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Console/Commands/DeleteFilesCommand.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/tests/Unit/App/Http/Requests/ShowBatchRequestTest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -96,6 +79,7 @@
     <setting file="file://$PROJECT_DIR$/src/app/Exceptions/BatchException.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/config/database.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Http/Controllers/Api/V1/BatchController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/app/Providers/EventServiceProvider.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.dev/dados.ok.csv" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/docker-compose.yml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/app/Http/Requests/SendBatchRequest.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -263,18 +247,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.dev" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/.dev" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/tests/Feature" />
       <recent name="$PROJECT_DIR$/src/tests/Unit/App/Http/Requests" />
       <recent name="$PROJECT_DIR$/src/app/Libraries" />
-      <recent name="$PROJECT_DIR$/src/app" />
-      <recent name="$PROJECT_DIR$/src/storage/logs" />
-      <recent name="$PROJECT_DIR$/.docker" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/.dev/client/.docker" />
@@ -301,7 +285,7 @@
       <workItem from="1624544006866" duration="53146000" />
       <workItem from="1624628931659" duration="3044000" />
       <workItem from="1624642591045" duration="2813000" />
-      <workItem from="1624687416637" duration="13288000" />
+      <workItem from="1624687416637" duration="36021000" />
     </task>
     <task id="LOCAL-00001" summary="before review tests">
       <created>1624587995228</created>
@@ -310,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624587995228</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add test auth passport">
+      <created>1624700983225</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624700983225</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +322,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="before review tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="before review tests" />
+    <MESSAGE value="add test auth passport" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test auth passport" />
   </component>
 </project>

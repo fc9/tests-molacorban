@@ -17,6 +17,8 @@ class BatchReaderCsv extends ReaderCsv
     {
         $records = [];
 
+        if (!file_exists($path)) return [];
+
         foreach (parent::fromPath($path, $delimiter) as $index => $record) {
             $records[$index] = self::normalize($record);
         }
@@ -38,16 +40,16 @@ class BatchReaderCsv extends ReaderCsv
             #elseif ($column === 'nome_prod') $value = $value;
             #elseif ($column === 'nome_categoria') $value = $value;
             #elseif ($column === 'nome_fornecedor') $value = $value;
-            elseif ($column === 'valor_original') $value = is_numeric($value) ? (float) number_format($value, 2) : $value;
+            elseif ($column === 'valor_original') $value = is_numeric($value) ? (float)number_format($value, 2) : $value;
             elseif ($column === 'data_compra') $value = $value === '0000/00/00' ? null : $value;
-            elseif ($column === 'valor_desconto') $value = is_numeric($value) ? (float) number_format($value, 2) : $value;
-            elseif ($column === 'valor_final') $value = is_numeric($value) ? (float) number_format($value, 2) : $value;
+            elseif ($column === 'valor_desconto') $value = is_numeric($value) ? (float)number_format($value, 2) : $value;
+            elseif ($column === 'valor_final') $value = is_numeric($value) ? (float)number_format($value, 2) : $value;
             elseif ($column === 'data_pgto') $value = $value === '0000/00/00' ? null : $value;
             elseif ($column === 'data_devolucao') $value = $value === '0000/00/00' ? null : $value;
             #elseif ($column === 'status_situacao') $value = $value;
             #elseif ($column === 'status_pgto') $value = $value;
-            elseif ($column === 'taxa_aplicada') $value = is_numeric($value) ? (float) number_format($value, 2) : $value;
-            elseif ($column === 'taxa_original') $value = is_numeric($value) ? (float) number_format($value, 2) : $value;
+            elseif ($column === 'taxa_aplicada') $value = is_numeric($value) ? (float)number_format($value, 2) : $value;
+            elseif ($column === 'taxa_original') $value = is_numeric($value) ? (float)number_format($value, 2) : $value;
 
             $records[$column] = $value;
         }

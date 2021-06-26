@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Enums\BatchStatusEnum;
+use App\Events\NewBatchFile;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\{HasMany};
@@ -65,6 +66,15 @@ class Batch extends Model
             $model->setAttribute($model->getKeyName(), Uuid::uuid4());
         });
     }
+
+    /**
+     * The event map for the model.
+     *
+     * @var array
+     */
+    protected $dispatchesEvents = [
+        'created' => NewBatchFile::class
+    ];
 
     /**
      * Get all of the purchases for the batch.

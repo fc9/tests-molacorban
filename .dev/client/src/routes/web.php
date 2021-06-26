@@ -62,5 +62,7 @@ Route::get('grant-password', function () {
         'scope' => ''
     ]);
 
+    //9
+    //lEXqs8jrhz0Ls2KjR6pxeuc34vu64U0XsmMmNGV5
     dd($passportRequest->json(), $passportRequest->status());
 });

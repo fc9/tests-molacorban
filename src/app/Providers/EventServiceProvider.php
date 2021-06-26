@@ -2,10 +2,9 @@
 
 namespace App\Providers;
 
-use App\Models\Batch;
-use App\Observers\BatchObserver;
+use App\Events\NewBatchFile;
+use App\Listeners\ProcessBatchFiles;
 use Illuminate\Auth\Events\Registered;
-use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider
@@ -16,8 +15,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        Registered::class => [
-            SendEmailVerificationNotification::class,
+        NewBatchFile::class => [
+            ProcessBatchFiles::class
         ],
     ];
 

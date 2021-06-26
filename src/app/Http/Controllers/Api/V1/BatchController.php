@@ -62,7 +62,6 @@ class BatchController extends Controller
 
             DB::beginTransaction();
             $batch = $this->repo->store($payload);
-            #dispatch((new LoadBatchFilesJob()));
             DB::commit();
 
             $data = [
