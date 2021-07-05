@@ -6,7 +6,7 @@
 [![PostgreeSQL](https://img.shields.io/badge/PostgreSQL-13.3-blue)](https://registry.hub.docker.com/_/postgres)
 [![Redis](https://img.shields.io/badge/Redis-8.40-red.svg)](https://registry.hub.docker.com/_/redis)
 [![Build with PHPStorm](https://img.shields.io/badge/Build_in-PHPStorm-blue.svg)](https://www.jetbrains.com/phpstorm/)
-[![Build with PHPStorm](https://img.shields.io/badge/Build_in-PHPStorm-blue.svg)](https://www.jetbrains.com/phpstorm/)
+[![Build with PHPStorm](https://img.shields.io/badge/Manager_in-DataGrid-blue.svg)](https://www.jetbrains.com/datagrip/)
 [![Tests](https://img.shields.io/badge/Tests-Passing-green)](https://shields.io/)
 
 > [Fase técnica](https://github.com/molacorban/interviews/blob/main/php-challenge/REAME.md) para Dev PHP na [molacorban.com.br](https://www.molacorban.com.br/)
